@@ -1,4 +1,5 @@
 
+import { Outlet } from 'react-router'
 import './App.css'
 
 function App() {
@@ -6,7 +7,11 @@ function App() {
 
   return (
     <>
-      <h1 className='bg-orange-300 p-8 text-center text-2xl'>Hello World</h1>
+      <nav>Navbar</nav>
+        <main className='min-h-screen'>
+          <Outlet/>
+        </main>
+      <footer>Footer</footer>
     </>
   )
 }
