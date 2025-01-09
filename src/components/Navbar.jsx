@@ -24,25 +24,21 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-                    >
-                        <li>
-                            <a>Item 1</a>
-                        </li>
-                        <li>
-                            <a>Parent</a>
+                        className="menu menu-sm dropdown-content font-bold bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/services">Services</Link></li>
+                    <li><Link to="/blogs">Blogs</Link></li>
+                    <li>
+                        <details>
+                            <summary>Categories</summary>
                             <ul className="p-2">
-                                <li>
-                                    <a>Submenu 1</a>
-                                </li>
-                                <li>
-                                    <a>Submenu 2</a>
-                                </li>
+                                <li><Link>Web Design</Link></li>
+                                <li><Link>App Development</Link></li>
+                                <li><Link>UI/UX Design</Link></li>
+                                <li><Link>Digital Marketing</Link></li>
                             </ul>
-                        </li>
-                        <li>
-                            <a>Item 3</a>
-                        </li>
+                        </details>
+                    </li>
                     </ul>
                 </div>
                 <Link to="/" className="text-xl font-bold flex item-center">
@@ -51,40 +47,26 @@ const Navbar = () => {
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/services">Services</Link>
-                    </li>
-                    <li>
-                        <Link to="/blogs">Blogs</Link>
-                    </li>
+                <ul className="menu menu-horizontal px-1 font-semibold from-neutral-400">
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/services">Services</Link></li>
+                    <li><Link to="/blogs">Blogs</Link></li>
                     <li>
                         <details>
                             <summary>Categories</summary>
                             <ul className="p-2">
-                                <li>
-                                    <Link>Web Design</Link>
-                                </li>
-                                <li>
-                                    <Link>App Development</Link>
-                                </li>
-                                <li>
-                                    <Link>UI/UX Design</Link>
-                                </li>
-                                <li>
-                                    <Link>Digital Marketing</Link>
-                                </li>
+                                <li><Link>Web Design</Link></li>
+                                <li><Link>App Development</Link></li>
+                                <li><Link>UI/UX Design</Link></li>
+                                <li><Link>Digital Marketing</Link></li>
                             </ul>
                         </details>
                     </li>
-
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn">Button</a>
+            <div className="navbar-end space-x-4">
+                <Link to="/login" className="btn btn-outline btn-primary px-8 hidden sm:flex">Log In</Link>
+                <Link to="/pricing" className="btn  btn-primary bg-primary text-white">Start Free Trial</Link>
             </div>
         </div>
     );
