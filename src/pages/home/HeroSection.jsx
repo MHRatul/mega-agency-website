@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaArrowRight } from "react-icons/fa6";
 import { IoPlayCircleOutline } from "react-icons/io5";
 import bannerImg from "../../assets/banner.png"
 
 const HeroSection = () => {
+    const [showModal, setShowModal] = useState(false);
+
+    const openModal = () => setShowModal(true);
+    const closeModal = () => setShowModal(false);
     return (
         <div className='bg-colorBg'>
             <div className='max-w-screen-2xl container mx-auto py-20 px-5 flex flex-col lg:flex-row justify-between items-center'>
@@ -26,11 +30,16 @@ const HeroSection = () => {
                 <div className='lg:w-1/2 mt-10 lg:mt-0 flex justify-end relative '>
                    <div className='relative group '>
                     <img src={bannerImg} alt="banner image" className='rounded-lg shadow-lg' />
-                    <button className='absolute inset-0 flex items-center justify-center rounded-lg group-hover:opacity-75 transition z-0'>
+                    <button onClick={openModal} className='absolute inset-0 flex items-center justify-center rounded-lg group-hover:opacity-75 transition z-0'>
                       <IoPlayCircleOutline className='text-white text-5xl hover:text-red-600'/>
                     </button>
                    </div>
                 </div>
+
+                {/* modal */}
+                {
+                    showModal && (<div>Modal</div>)
+                }
             </div>
         </div>
     )
