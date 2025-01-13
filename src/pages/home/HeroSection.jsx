@@ -39,11 +39,12 @@ const HeroSection = () => {
                 {/* modal */}
                 {
                     showModal && (<div className='fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50'>
-                        <div className='bg-white p-5 rounded-lg shadow-lg relative max-w-xl w-full'>
-                            <div className='bg-white p-10 rounded-lg shadow-lg'>
-                                <p className='text-3xl font-bold mb-4'>Welcome to our website!</p>
-                                <p className=' text-lg text-gray-600 mb-4'>This is the content of the modal. It can be anything you want to display.</p>
-                                <button onClick={closeModal} className='bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition'>Close</button>
+                        <div className='bg-white p-4 rounded-lg shadow-lg relative max-w-xl w-full'>
+                            <button onClick={closeModal} className='rounded-full absolute top-1 right-1 border-2 w-8 h-8 bg-red-600 border-white text-white hover:bg-red-700 text-2xl translate-x-6 translate-y-[-80%]'> &times;</button>
+                            <iframe width="540" height="315" src="https://www.youtube.com/embed/w54Hw_sEeR0?si=TtNrqtQHiHf1n866" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div className='text-2xl mb-4'>
+                                <p className='text-4xl text-gray-800 font-bold mt-5 mb-4'>Welcome to our Agency website!</p>
+                                <p className='text-lg italic ... text-gray-500 mb-4'>"Join our community of creative professionals and take your business to the next level."</p>
 
                             </div>
                         </div>
