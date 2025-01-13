@@ -16,12 +16,12 @@ const tools = [
     {
         icon: FiSmartphone,
         title: "Responsive Design",
-        description: "Works seamlessly on all devices, including desktops, tablets, and smartphones."
+        description: "Works seamlessly on desktops, tablets, and smartphones."
     },
     {
         icon: FiCloud,
         title: "Cloud Integration",
-        description: "Connect your website to your cloud services for easy management and deployment."
+        description: "Connect your website for easy management and deployment."
     },
 ]
 
