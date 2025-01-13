@@ -66,7 +66,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-end space-x-4">
                 <Link to="/login" className="btn btn-outline btn-primary px-8 hidden sm:flex">Log In</Link>
-                <Link to="/pricing" className="btn  btn-primary bg-primary text-white">Start Free Trial</Link>
+                <Link to="/pricing" className="btn  btn-primary hover:bg-primary text-white">Start Free Trial</Link>
             </div>
         </div>
     );
