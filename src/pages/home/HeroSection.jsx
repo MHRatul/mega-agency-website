@@ -38,7 +38,16 @@ const HeroSection = () => {
 
                 {/* modal */}
                 {
-                    showModal && (<div>Modal</div>)
+                    showModal && (<div className='fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50'>
+                        <div className='bg-white p-5 rounded-lg shadow-lg relative max-w-xl w-full'>
+                            <div className='bg-white p-10 rounded-lg shadow-lg'>
+                                <p className='text-3xl font-bold mb-4'>Welcome to our website!</p>
+                                <p className=' text-lg text-gray-600 mb-4'>This is the content of the modal. It can be anything you want to display.</p>
+                                <button onClick={closeModal} className='bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition'>Close</button>
+
+                            </div>
+                        </div>
+                    </div>)
                 }
             </div>
         </div>
