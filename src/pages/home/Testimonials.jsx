@@ -118,8 +118,8 @@ const Testimonials = () => {
                         <div className='md:w-1/2 bg-white shadow md:p-8 p-4 rounded-md'>
                                 <img
                                     src="/images/authors/author3.png"
-                                    className="size-14 mx-auto my-2 object-contain" />
-                                    <p className='text-gray-600 italic mb-4 md:w-3/5 mx-auto'>"Amazing experience! This user-friendly platform has made my job easier and
+                                    className="size-14 mx-auto my-2 mt-6 object-contain" />
+                                    <p className='text-gray-600 italic mt-16 md:w-3/5 mx-auto'>"Amazing experience! This user-friendly platform has made my job easier and
                                     more efficient. Highly recommended!"</p>
                                     <div className='flex flex-col items-center space-y-2'>
                                         <div className='size-10 rounded-full bg-blue-100 flex
@@ -151,7 +151,7 @@ const Testimonials = () => {
                                 <img
                                     src="/images/authors/author1.png"
                                     className="size-14 mx-auto my-2 object-contain" />
-                                    <p className='text-gray-600 italic mb-4 md:w-3/5 mx-auto'>"This platform has revolutionized my business. It's easy to use and has a wide range of features
+                                    <p className='text-gray-600 italic mt-6 mb-4 md:w-3/5 mx-auto'>"This platform has revolutionized my business. It's easy to use and has a wide range of features
                                         that help me grow my business. I highly recommend it."</p>
                                     <div className='flex flex-col items-center space-y-2'>
                                         <div className='size-10 rounded-full bg-blue-100 flex
@@ -164,7 +164,7 @@ const Testimonials = () => {
                                 <img
                                     src="/images/authors/author2.png"
                                     className="size-14 mx-auto my-2 object-contain" />
-                                    <p className='text-gray-600 italic mb-4 md:w-3/5 mx-auto'>"I've been using this platform for a while now and it has helped me grow my business.
+                                    <p className='text-gray-600 italic mt-6 mb-4 md:w-3/5 mx-auto'>"I've been using this platform for a while now and it has helped me grow my business.
                                     The support team is very helpful and responsive."</p>
                                     <div className='flex flex-col items-center space-y-2'>
                                         <div className='size-10 rounded-full bg-blue-100 flex
