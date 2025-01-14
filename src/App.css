@@ -11,5 +11,8 @@
 .animate-scroll{
     display: inline-flex;
     animation: scroll 7s linear infinite ;
-    
+
+}
+.section-container{
+    @apply max-w-screen-2xl container mx-auto py-20 px-5;
 }
