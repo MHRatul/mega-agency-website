@@ -59,7 +59,7 @@ const Blogs = () => {
             {
                 blogs.map((blog, index) =>(
                     <div key={blog.id} className='mb-10 bg-white shadow-md rounded-lg  overflow-hidden hover:shadow-xl transition cursor-pointer '>
-                        <img src={blog.image} alt={blog.title} className=' rounded-t-lg w-full h-48 object-cover' />
+                        <img src={blog.image} alt={blog.title} className=' rounded-t-lg w-full h-48 object-cover hover:scale-105 transition transform' />
 
                          {/* blog content */}
                          <div className='p-5'>
@@ -70,7 +70,7 @@ const Blogs = () => {
 
 
                             {/* author info */}
-                            <div>
+                            <div className='flex items-center space-x-3'>
                                 <img src={blog.authorImage} alt={blog.authorName} className='w-10 mt-3 h-10 rounded-full obeject-cover' />
                                 <h4 className='text-sm font-semibold text-gray-800'>{blog.authorName}</h4>
                                 <p className='text-xs text-gray-500'>{blog.authorRole}</p>
