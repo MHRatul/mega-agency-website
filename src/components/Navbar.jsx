@@ -65,8 +65,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end space-x-4">
-                <Link to="/login" className="btn btn-outline btn-primary px-8 hidden sm:flex">Log In</Link>
-                <Link to="/pricing" className="btn  btn-primary hover:bg-primary text-white">Start Free Trial</Link>
+                <Link to="/login" className="bg-transparent border border-blue-600 text-blue-600 py-3 px-4 rounded-md
+                          hover:bg-blue-600 hover:text-white transition">Log In</Link>
+                <Link to="/pricing" className="bg-blue-600 text-white py-3 px-4 rounded-md flex justify-center items-center hover:bg-blue-700 transition">Start Free Trial</Link>
             </div>
         </div>
     );
