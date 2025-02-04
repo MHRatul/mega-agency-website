@@ -70,13 +70,13 @@ const TeamSection = () => {
 
                                   <div className='flex space-x-4 mb-5 items-center'>
                                       <Link to={member.linkedIn}><FaLinkedinIn className='text-blue-600 hover:text-blue-800'/></Link>
-                                      <Link to={member.twitter}><FaTwitter className='text-blue-600 hover:text-blue-800'/></Link>
-                                      <Link to={member.instagram}><FaInstagram className='text-blue-600 hover:text-blue-800'/></Link>
-                                      <Link to={member.facebook}><FaFacebookF className='text-blue-600 hover:text-blue-800'/></Link>
+                                      <Link to={member.twitter}><FaTwitter className='text-blue-500 hover:text-blue-700'/></Link>
+                                      <Link to={member.instagram}><FaInstagram className='text-pink-600 hover:text-pink-800'/></Link>
+                                      <Link to={member.facebook}><FaFacebookF className='text-blue-700 hover:text-blue-900'/></Link>
                                   </div>
 
                                   {/* contact button */}
-                                  <button className='bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300'>Conatct {member.name.split(" ")[0]}</button>
+                                  <button className='bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-300'>Conatct {member.name.split(" ")[0]}</button>
                               </div>
                           </div>
                       ))
