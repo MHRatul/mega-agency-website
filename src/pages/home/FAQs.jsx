@@ -54,24 +54,25 @@ const FAQs = () => {
                 {
                     faqs.map((faq) =>(
                         <div key={faq.id} className='mb-4 border border-gray-200'>
-                            <div onClick={() => toggleFAQ(faq.id)}  className='cursor-pointer border-b border-gray-200'>
+
+                            {/* questions */}
+
+                            <div onClick={() => toggleFAQ(faq.id)}  className='cursor-pointer justify-between items-center flex p-4 bg-gray-50 hover:bg-gray-200
+                            transition duration-300 ease-in-out'>
                             <h3 className='text-lg font-semibold text-gray-800 '>{faq.question}</h3>
                             <span className={`transform transition duration-300 text-lg font-semibold text-gray-800 ease-in-out ${expandFAQ === faq.id ? 'rotate-180' : 'rotate-0'}`}>
                                 {expandFAQ === faq.id ? "-"  : '+'}
                             </span>
                            </div>
-                        </div>
-                    ))
-                }
-
-                {/* faqs accordian-answer section */}
+                    {/* faqs accordian-answer section */}
                 {
-                    faqs.map((faq) =>(
-                        <div key={faq.id} className={`overflow-hidden transition-all duration-300 ease-in-out ${expandFAQ === faq.id ? 'max-h-full' : 'max-h-0'}`}>
-                            <p className='text-gray-600 mt-3'>{faq.answer}</p>
-                        </div>
-                    ))
+                    expandFAQ === faq.id && (<div className='border-t border-gray-200'>
+                        <p className='p-4 text-gray-600'>{faq.answer}</p>
+                    </div>)
                 }
+                        </div>
+                    ))}
+
              </div>
         </div>
     </div>
