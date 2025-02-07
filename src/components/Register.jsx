@@ -2,8 +2,8 @@ import React from 'react'
 import { FaGoogle, FaGithub, FaFacebook } from "react-icons/fa";
 import { Link, useNavigate } from 'react-router';
 import { useForm } from "react-hook-form"
-//import { useAuth } from '../context/AuthContext';
-//import Swal from 'sweetalert2';
+import { useAuth } from '../context/AuthContext';
+import Swal from 'sweetalert2';
 
 const Register = () => {
 
