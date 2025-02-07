@@ -7,6 +7,7 @@ import ErrorPage from './components/ErrorPage.jsx'
 import Pricing from './pages/home/Pricing.jsx'
 import Services from './pages/home/Services.jsx'
 import Blogs from './pages/home/Blogs.jsx'
+import Register from './components/Register.jsx'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -24,7 +25,7 @@ createRoot(document.getElementById('root')).render(
 
         {/* Authentication */}
 
-        <Route path="/register" element={<div>Registration Page</div>} />
+        <Route path="/register" element={<Register/>} />
         <Route path="/login" element={<div>Login Page</div>} />
       </Routes>
   </BrowserRouter>,
