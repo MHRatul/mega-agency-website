@@ -1,6 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import  'sweetalert2/dist/sweetalert2.js'
 import { BrowserRouter, Route, Routes } from 'react-router'
 import Home from './pages/home/Home.jsx'
 import ErrorPage from './components/ErrorPage.jsx'
