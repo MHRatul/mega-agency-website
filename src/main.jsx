@@ -8,9 +8,11 @@ import Pricing from './pages/home/Pricing.jsx'
 import Services from './pages/home/Services.jsx'
 import Blogs from './pages/home/Blogs.jsx'
 import Register from './components/Register.jsx'
+import AuthProvider from './context/AuthContext.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+<AuthProvider>
+<BrowserRouter>
       <Routes>
         {/* main layout */}
         <Route element={<App/>}>
@@ -28,5 +30,6 @@ createRoot(document.getElementById('root')).render(
         <Route path="/register" element={<Register/>} />
         <Route path="/login" element={<div>Login Page</div>} />
       </Routes>
-  </BrowserRouter>,
+  </BrowserRouter>
+</AuthProvider>,
 )
