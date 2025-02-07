@@ -16,7 +16,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/blogs" element={<div>Blogs Page</div>} />
 
           {/* error page */}
-          <Route path="*" element={<div>ErrorPage</div>} />
+          <Route path="*" element={<ErrorPage/>} />
         </Route>
       </Routes>
   </BrowserRouter>,

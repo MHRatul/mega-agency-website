@@ -1,13 +1,17 @@
 import React from 'react'
 
-import errorIcon from '../assets/rocket-icon.png'
+import errorIcon from "../assets/rocket-icon.png"
+import { Link } from 'react-router'
 
-const ErrorPage = ({message ="Page not found", code = 404}) => {
+const ErrorPage = ({message="Page not found", code= 404}) => {
   return (
-    <div className='flex flex-col justify-center text-center items-center  min-h-screen space-y-5'>
-        <img src={errorIcon} alt='404' className='w-1/2' />
-        <h1 className='text-3xl font-bold text-gray-800'>{message}</h1>
-        <p className='text-gray-600'>Error Code: {code}</p>
+    <div className='flex flex-col items-center justify-center text-center min-h-screen space-y-5'>
+        <img src={errorIcon} alt="rocket icon" />
+        <h1 className='text-4xl font-bold to-gray-700'>{message}</h1>
+        <p className='text-[#21272A] md:w-2/5 w-full mx-auto'>This page does not exist or has been removed. Please go back to the home page &
+        try again</p>
+
+        <Link to="/" className='mt-6 px-6 py-3 bg-green-500 text-white rounded-md shadow-md hover:bg-green-600 transition'>Go to Home Page</Link>
     </div>
   )
 }
