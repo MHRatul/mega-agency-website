@@ -4,6 +4,9 @@ import App from './App.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router'
 import Home from './pages/home/Home.jsx'
 import ErrorPage from './components/ErrorPage.jsx'
+import Pricing from './pages/home/Pricing.jsx'
+import Services from './pages/home/Services.jsx'
+import Blogs from './pages/home/Blogs.jsx'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -11,13 +14,18 @@ createRoot(document.getElementById('root')).render(
         {/* main layout */}
         <Route element={<App/>}>
           <Route path="/" element={<Home/>} />
-          <Route path="/pricing" element={<div>Pricing Page</div>} />
-          <Route path="/services" element={<div>services Page</div>} />
-          <Route path="/blogs" element={<div>Blogs Page</div>} />
+          <Route path="/pricing" element={<Pricing/>} />
+          <Route path="/services" element={<Services/>} />
+          <Route path="/blogs" element={<Blogs/>} />
 
           {/* error page */}
           <Route path="*" element={<ErrorPage/>} />
         </Route>
+
+        {/* Authentication */}
+
+        <Route path="/register" element={<div>Registration Page</div>} />
+        <Route path="/login" element={<div>Login Page</div>} />
       </Routes>
   </BrowserRouter>,
 )

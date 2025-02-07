@@ -32,7 +32,7 @@ const Navbar = () => {
                     <li>
                         <details>
                             <summary>Categories</summary>
-                            <ul className="p-2">
+                            <ul className="p-2 z-50">
                                 <li><Link>Web Design</Link></li>
                                 <li><Link>App Development</Link></li>
                                 <li><Link>UI/UX Design</Link></li>
@@ -55,11 +55,11 @@ const Navbar = () => {
                     <li>
                         <details>
                             <summary>Categories</summary>
-                            <ul className="p-2">
-                                <li><Link>Web Design</Link></li>
-                                <li><Link>App Development</Link></li>
-                                <li><Link>UI/UX Design</Link></li>
-                                <li><Link>Digital Marketing</Link></li>
+                            <ul className="p-2 z-50">
+                                <li><Link to="/" >Web Design</Link></li>
+                                <li><Link to="/">App Development</Link></li>
+                                <li><Link to="/">UI/UX Design</Link></li>
+                                <li><Link to="/">Digital Marketing</Link></li>
                             </ul>
                         </details>
                     </li>
