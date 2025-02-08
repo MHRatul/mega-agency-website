@@ -74,7 +74,7 @@ const Navbar = () => {
             <div className="navbar-end space-x-4">
                 {
                     user ? (<><Link to="/dashboard" className="btn btn-outline  hover:bg-blue-800 px-8 hidden sm:flex">Dashboard</Link>
-                        <button onClick={handleLogOut}  className="btn  bg-blue-600 hover:bg-blue-800 text-white">Logout</button></>) : (<><Link to="/login" className="btn btn-outline btn-primary px-8 hidden sm:flex">Log In</Link>
+                        <button onClick={handleLogOut}  className="btn  bg-blue-600 hover:bg-blue-800 text-white">Logout</button></>) : (<><Link to="/login" className="btn bg-blue-600 hover:bg-blue-800 text-white px-8 hidden sm:flex">Log In</Link>
                             <Link to="/pricing" className="btn  bg-blue-600 hover:bg-blue-800  text-white">Start Free Trial</Link></>)
                 }
 
